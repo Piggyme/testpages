@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  
+</head>
+<body>
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<div id="app">
+  <h3>Q1. Use 2-way data binding to update the value of a password data property</h3>
+  <input type="password" placeholder="Enter your password" v-model="password">
+  
+  
+  <br>
+  <h3> Q2. Correct para depending on length of entered password</h3>
+  <p v-if="password.length >8">Password is greater than characters</p>
+  <p v-else-if="password.length>0">Please enter longer password</p>
+  <p v-else>Please enter password</p>
+  
+  
+  <br>
+  <h3>Q3. Display categories as an ordered list and nested order list</h3>
+  <ol>
+    <li v-for="category in categories">{{category.name}}
+      <ul>
+        <li v-for="sub in category.sub">{{sub}}</li>
+      </ul>
+    </li>
+  </ol>
+</div>
+</body>
+</html>
+<script>
+new Vue({
+  el: '#app',
+  data: {password:'',
+        categories:[{name:'JavaScript', sub:['Vue.js','React','AngularJS']},
+                   {name:'Database', sub:['Oracle', 'MySQL','PostgreSQL']},
+                   {name:'Operating System', sub:['macOS','Linux','Windows']}
+                   ]
+        }
+});
+</script>
