@@ -2,6 +2,6 @@
   <component name="PathMacrosImpl">
     <macro name="ANDROID_HOME" value="C:/Users/Dell/AppData/Local/Android/Sdk" />
     <macro name="GRADLE_HOME" value="C:/Program Files/Android/Android Studio/gradle/gradle-4.1" />
-    <macro name="KOTLIN_BUNDLED" value="C:/Program Files/Android/Android Studio/plugins/Kotlin/kotlinc" />
+    <macro name="KOTLIN_BUNDLED" value="C:\Program Files\Android\Android Studio\plugins\Kotlin\kotlinc" />
   </component>
 </application>
